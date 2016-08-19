@@ -13,6 +13,8 @@ function pingProcess(pingedArray) {
         pingedArray[i] = "ping-pong";
     } else if (pingedArray[i] % 5 === 0) {
       pingedArray[i] = "pong";
+    } else if (pingedArray[i] % 3 === 0) {
+      pingedArray[i] = "ping";
     }
   };
   return pingedArray;
