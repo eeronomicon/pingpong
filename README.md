@@ -26,13 +26,13 @@ This application uses branching logic and iteration to output a series of number
   * Example Input: ...11,12,13
   * Example Output: [...11,"ping",13]
 
-* Replacement of numbers with text is performed in the above order (i.e., 45 which is divisible by both 3, 5, and 15 will be replaced with "ping-pong"):
+* Replacement of numbers with text is performed in the above order (i.e., 45 which is divisible by 3, 5, and 15 will be replaced with "ping-pong"):
   * Example Input: ...90
   * Example Output: [..."ping-pong"]  
 
 ## Setup/Installation Requirements
 
-* No setup required if published on GitHub Pages
+* No setup required if accessing via [GitHub Pages](https://eeronomicon.github.io/pingpong/)
 * For offline use, download GitHub .zip and unpack to local machine
 
 ## Known Bugs
