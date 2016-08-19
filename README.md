@@ -11,18 +11,25 @@ _{This application uses branching logic and iteration to output a series of numb
 ## Specifications
 
 * It can count up to the provided number:
-** Example Input: 3
-** Example Output: [1,2,3]
+  * Example Input: 3
+  * Example Output: [1,2,3]
+
+* Numbers divisible by 15 are replaced with "ping-pong":
+  * Example Input: 14,15,16
+  * Example Output: [14,"ping-pong",16]
+
+* Numbers divisible by 5 are replaced with "pong":
+  * Example Input: 8,9,10
+  * Example Output: [8,"pong",10]
+
+* Numbers divisible by 3 are replaced with "ping":
+  * Example Input: 11,12,13
+  * Example Output: [11,"ping",13]
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+* No setup required if published on GitHub Pages
+* For offline use, download GitHub .zip and unpack to local machine
 
 ## Known Bugs
 
