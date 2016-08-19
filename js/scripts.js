@@ -21,7 +21,6 @@ function pingProcess(pingedArray) {
   };
   return pingedArray;
 };
-
 // Front End Code
 // Populate 1 or 3 columns with output, based on output length
 function pongDisplay(pongInput) {
@@ -48,7 +47,7 @@ function pongDisplay(pongInput) {
     }
   }
 };
-$(document).ready (function(){
+$(document).ready(function(){
 // Collect, process, and display data
   $("#pingForm").submit(function(event) {
     pingNumber = parseInt($("#pingInput").val());
