@@ -1,4 +1,5 @@
 // Back End Code
+// Create initial array of numbers
 var pingArray = [];
 function pingSplit(userNumber) {
   pingArray = [];
@@ -7,6 +8,7 @@ function pingSplit(userNumber) {
   };
   return pingArray;
 };
+// Replace specified numbers with text and styling
 function pingProcess(pingedArray) {
   for (i = 0; i < pingedArray.length; i++) {
     if (pingedArray[i] % 15 === 0) {
@@ -21,6 +23,7 @@ function pingProcess(pingedArray) {
 };
 
 // Front End Code
+// Populate 1 or 3 columns with output, based on output length
 function pongDisplay(pongInput) {
   $(".pongResults").empty();
   $(".pongHeader").show();
@@ -46,6 +49,7 @@ function pongDisplay(pongInput) {
   }
 };
 $(document).ready (function(){
+// Collect, process, and display data
   $("#pingForm").submit(function(event) {
     pingNumber = parseInt($("#pingInput").val());
     pingResult = pingProcess(pingSplit(pingNumber));
