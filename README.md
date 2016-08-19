@@ -1,12 +1,12 @@
-# _{Pingpong}_
+# _Pingpong_
 
-#### _{An exercise in branching, iteration, BDD documentation, and good coding habits}, {19 August 2016}_
+#### An exercise in branching, iteration, BDD documentation, and good coding practices, 19 August 2016
 
-#### By _**{HK Kahng}**_
+#### By _**HK Kahng**_
 
 ## Description
 
-_{This application uses branching logic and iteration to output a series of numbers and text based on user input and filtering criteria specified below.}_
+This application uses branching logic and iteration to output a series of numbers and text based on user input and filtering criteria specified below.}
 
 ## Specifications
 
@@ -33,18 +33,18 @@ _{This application uses branching logic and iteration to output a series of numb
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+There are no known bugs.
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+Contact me through GitHub. Thanks! :)
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+This application was created with HTML, CSS, JavaScript, jQuery, and Bootstrap.
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+This application is published under the MIT License.
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2016 **_HK Kahng_**
