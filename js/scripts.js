@@ -11,11 +11,12 @@ function pingProcess(pingedArray) {
   for (i = 0; i < pingedArray.length; i++) {
     if (pingedArray[i] % 15 === 0) {
         pingedArray[i] = "ping-pong";
+    } else if (pingedArray[i] % 5 === 0) {
+      pingedArray[i] = "pong";
     }
   };
   return pingedArray;
 };
-
 
 // Front End Code
 function pongDisplay(pongInput) {
@@ -24,7 +25,6 @@ function pongDisplay(pongInput) {
     $("#pongResults").append("<li>" + pongDigit + "</li>");
   });
 };
-
 $(document).ready (function(){
   $("#pingForm").submit(function(event) {
     pingNumber = parseInt($("#pingInput").val());
