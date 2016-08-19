@@ -1,15 +1,25 @@
 // Back End Code
 var pingArray = [];
 function pingSplit(userNumber) {
+  pingArray = [];
   for (i = 1; i <= userNumber; i++) {
     pingArray.push(i);
   };
   return pingArray;
 };
+function pingProcess(pingedArray) {
+  for (i = 0; i < pingedArray.length; i++) {
+    if (pingedArray[i] % 15 === 0) {
+        pingedArray[i] = "ping-pong";
+    }
+  };
+  return pingedArray;
+};
 
 
 // Front End Code
 function pongDisplay(pongInput) {
+  $("#pongResults").empty();
   pongInput.forEach(function(pongDigit) {
     $("#pongResults").append("<li>" + pongDigit + "</li>");
   });
@@ -17,9 +27,8 @@ function pongDisplay(pongInput) {
 
 $(document).ready (function(){
   $("#pingForm").submit(function(event) {
-    $("#pongResults").empty();
     pingNumber = parseInt($("#pingInput").val());
-    pingResult = pingSplit(pingNumber);
+    pingResult = pingProcess(pingSplit(pingNumber));
     pongDisplay(pingResult);
 
     event.preventDefault();
