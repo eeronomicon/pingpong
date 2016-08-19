@@ -23,7 +23,8 @@ function pingProcess(pingedArray) {
 // Front End Code
 function pongDisplay(pongInput) {
   $(".pongResults").empty();
-  if (pongInput.length < 10) {
+  $(".pongHeader").show();
+  if (pongInput.length < 6) {
     pongInput.forEach(function(pongDigit) {
       $("#pongResults1").append("<li class=\"list-group-item\">" + pongDigit + "</li>");
     });

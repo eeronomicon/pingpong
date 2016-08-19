@@ -10,3 +10,6 @@
 .ping-pong {
   color: #0074D9;
 }
+.pongHeader {
+  display: none;
+}
