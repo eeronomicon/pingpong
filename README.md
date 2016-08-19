@@ -6,7 +6,7 @@
 
 ## Description
 
-This application uses branching logic and iteration to output a series of numbers and text based on user input and filtering criteria specified below.}
+This application uses branching logic and iteration to output a series of numbers and text based on user input and by the criteria specified below.}
 
 ## Specifications
 
@@ -15,20 +15,20 @@ This application uses branching logic and iteration to output a series of number
   * Example Output: [1,2,3]
 
 * Numbers divisible by 15 are replaced with "ping-pong":
-  * Example Input: 14,15,16
-  * Example Output: [14,"ping-pong",16]
+  * Example Input: ...14,15,16
+  * Example Output: [...14,"ping-pong",16]
 
 * Numbers divisible by 5 are replaced with "pong":
-  * Example Input: 8,9,10
-  * Example Output: [8,"pong",10]
+  * Example Input: ...8,9,10
+  * Example Output: [...8,"pong",10]
 
 * Numbers divisible by 3 are replaced with "ping":
-  * Example Input: 11,12,13
-  * Example Output: [11,"ping",13]
+  * Example Input: ...11,12,13
+  * Example Output: [...11,"ping",13]
 
 * Replacement of numbers with text is performed in the above order (i.e., 45 which is divisible by both 3, 5, and 15 will be replaced with "ping-pong"):
-  * Example Input: 90
-  * Example Output: ["ping-pong"]  
+  * Example Input: ...90
+  * Example Output: [..."ping-pong"]  
 
 ## Setup/Installation Requirements
 

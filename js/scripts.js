@@ -44,7 +44,6 @@ function pongDisplay(pongInput) {
       }
     }
   }
-
 };
 $(document).ready (function(){
   $("#pingForm").submit(function(event) {
