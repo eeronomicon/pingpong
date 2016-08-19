@@ -1,3 +1,12 @@
 .jumbotron {
   background-image: url(../img/ennui.png);
 }
+.ping {
+  color: #85144b;
+}
+.pong {
+  color: #2ECC40;
+}
+.ping-pong {
+  color: #0074D9;
+}

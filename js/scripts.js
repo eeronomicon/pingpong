@@ -10,11 +10,11 @@ function pingSplit(userNumber) {
 function pingProcess(pingedArray) {
   for (i = 0; i < pingedArray.length; i++) {
     if (pingedArray[i] % 15 === 0) {
-        pingedArray[i] = "ping-pong";
+        pingedArray[i] = "<span class=\"ping-pong\">ping-pong</span>";
     } else if (pingedArray[i] % 5 === 0) {
-      pingedArray[i] = "pong";
+      pingedArray[i] = "<span class=\"pong\">pong</span>";
     } else if (pingedArray[i] % 3 === 0) {
-      pingedArray[i] = "ping";
+      pingedArray[i] = "<span class=\"ping\">ping</span>";
     }
   };
   return pingedArray;
@@ -23,16 +23,18 @@ function pingProcess(pingedArray) {
 // Front End Code
 function pongDisplay(pongInput) {
   $("#pongResults").empty();
-  pongInput.forEach(function(pongDigit) {
-    $("#pongResults").append("<li>" + pongDigit + "</li>");
-  });
+  if (pongInput.length < 10) {
+    pongInput.forEach(function(pongDigit) {
+      $("#pongResults").append("<li class=\"list-group-item\">" + pongDigit + "</li>");
+    });
+  }
+
 };
 $(document).ready (function(){
   $("#pingForm").submit(function(event) {
     pingNumber = parseInt($("#pingInput").val());
     pingResult = pingProcess(pingSplit(pingNumber));
     pongDisplay(pingResult);
-
     event.preventDefault();
   });
 });
