@@ -1,12 +1,18 @@
-# _{Application Name}_
+# _{Pingpong}_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _{An exercise in branching, iteration, BDD documentation, and good coding habits}, {19 August 2016}_
 
-#### By _**{List of contributors}**_
+#### By _**{HK Kahng}**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_{This application uses branching logic and iteration to output a series of numbers and text based on user input and filtering criteria specified below.}_
+
+## Specifications
+
+* It can count up to the provided number:
+** Example Input: 3
+** Example Output: [1,2,3]
 
 ## Setup/Installation Requirements
 
