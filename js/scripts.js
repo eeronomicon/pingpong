@@ -1,6 +1,5 @@
 // Back End Code
 // Create initial array of numbers
-var pingArray = [];
 function pingSplit(userNumber) {
   pingArray = [];
   for (i = 1; i <= userNumber; i++) {
@@ -12,16 +11,32 @@ function pingSplit(userNumber) {
 function pingProcess(pingedArray) {
   for (i = 0; i < pingedArray.length; i++) {
     if (pingedArray[i] % 15 === 0) {
-      pingedArray[i] = "<span class=\"ping-pong\">ping-pong</span>";
+      pingedArray[i] = "ping-pong";
     } else if (pingedArray[i] % 5 === 0) {
-      pingedArray[i] = "<span class=\"pong\">pong</span>";
+      pingedArray[i] = "pong";
     } else if (pingedArray[i] % 3 === 0) {
-      pingedArray[i] = "<span class=\"ping\">ping</span>";
+      pingedArray[i] = "ping";
     }
   };
   return pingedArray;
 };
 // Front End Code
+// Add color styling to output based on text
+function pongColor(pingResults) {
+  var pongResults = [];
+  pingResults.forEach(function(pingResult) {
+    if (pingResult === "ping-pong") {
+      pongResults.push("<span class=\"ping-pong\">ping-pong</span>");
+    } else if (pingResult === "pong") {
+      pongResults.push("<span class=\"pong\">pong</span>");
+    } else if (pingResult === "ping") {
+      pongResults.push("<span class=\"ping\">ping</span>");
+    } else {
+      pongResults.push(pingResult);
+    }
+  });
+  return pongResults;
+}
 // Populate 1 or 3 columns with output, based on output length
 function pongDisplay(pongInput) {
   $(".pongResults").empty();
@@ -51,7 +66,7 @@ $(document).ready(function(){
 // Collect, process, and display data
   $("#pingForm").submit(function(event) {
     pingNumber = parseInt($("#pingInput").val());
-    pingResult = pingProcess(pingSplit(pingNumber));
+    pingResult = pongColor(pingProcess(pingSplit(pingNumber)));
     pongDisplay(pingResult);
     event.preventDefault();
   });
